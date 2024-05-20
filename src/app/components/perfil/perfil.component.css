@@ -1,0 +1,62 @@
+.perfil{
+  background-color: #111;
+  width: 85%;
+  height: 100%;
+  overflow-x: hidden;
+  float: right;
+}
+.container{
+  float: right;
+  margin-left: 15%;
+  margin-top: 4%;
+
+}
+img{
+  width: 300px;
+}
+.row{
+  float: left;
+  width: 100%;
+}
+
+.productos-grid {
+  display: grid;
+  margin-top: 2%;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.producto {
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.producto img {
+  max-width: 100%;
+  height: auto;
+}
+
+.producto h3 {
+  margin-top: 10px;
+}
+
+.producto p {
+  margin-bottom: 10px;
+}
+
+.producto span {
+  font-weight: bold;
+}
+
+.producto button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.producto button:hover {
+  background-color: #0056b3;
+}

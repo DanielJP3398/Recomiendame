@@ -1,0 +1,105 @@
+<app-sidebar />
+
+<div class="perfil">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4" >
+        <div class="card" style=" box-shadow: 0 9px 18px 0 rgba(247, 247, 247, 0.232);">
+          <div class="card-body">
+            <img [src]="card.imagen" alt="Foto de perfil" class="img-fluid rounded-circle mb-3">
+            <h5 class="card-title">{{card.titulo}}</h5>
+            <p class="card-text">{{card.contenido}}</p>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <i class="fas fa-envelope">{{card.correo}}</i>
+              </li>
+              <li class="list-group-item">
+                <i class="fas fa-phone">{{card.tel}}</i>
+              </li>
+              <li class="list-group-item">
+                <i class="fas fa-map-marker-alt">{{card.direccion}}</i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8" >
+        <div class="card" style="height: 100%; box-shadow: 0 9px 18px 0 rgba(247, 247, 247, 0.232);">
+          <div class="card-body">
+            <h5 class="card-title">Publicaciones</h5>
+            <div class="row largo">
+              <div class="col-md-6">
+                <img src="./assets/arrozpublicacion.jfif" alt="Imagen de perfil" style="width: 200px;">
+              </div>
+              <div class="col-md-6" style="background-color:  rgb(201, 197, 197);">
+                <p>Ven y comparte con nosotros las mejores experiencias y disfruta de un arrocito con amor</p>
+              </div>
+
+              <div class="rowDos" *ngFor="let comment of comments">
+                <div class="col-md-12">
+                  <br>
+                  <p style="background-color: rgb(201, 197, 197);">{{comment}}</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="containerDos">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Comentarios</h5>
+                        <textarea [(ngModel)]="newComment" class="form-control"
+                          placeholder="Escribe un comentario..."></textarea>
+                        <button (click)="addComment()" class="btn btn-primary mt-2">Publicar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <section class="productos-grid">
+        <div class="producto">
+          <img src="./assets/arrozconlecheproducto1.jpeg" alt="Producto 1">
+          <h3><b>Baileys</b></h3>
+          <p>Delicioso arroz con sabor a Baileys</p>
+          <span>$4000</span><br>
+          <button>Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <img src="./assets/arrozconlecheproducto2.jpeg" alt="Producto 2">
+          <h3>Maracuya</h3>
+          <p>Delicioso arroz con sabor a Maracuya</p>
+          <span>$4000</span><br>
+          <button>Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <img src="./assets/arrozconlecheproducto3.jpeg" alt="Producto 2">
+          <h3>Cafe</h3>
+          <p>Delicioso arroz con sabor a Cafe</p>
+          <span>$3500</span><br>
+          <button>Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <img src="./assets/arrozconlecheproducto4.jpeg" alt="Producto 2">
+          <h3>Chocolate</h3>
+          <p>Delicioso arroz con sabor a Chocolate</p>
+          <span>$3500</span><br>
+          <button>Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <img src="./assets/arrozconlecheproducto5.jpeg" alt="Producto 2">
+          <h3>Nutela</h3>
+          <p>Delicioso arroz con sabor a Nutela</p>
+          <span>$4000</span><br>
+          <button>Agregar al carrito</button>
+        </div>
+      </section>
+
+
+    </div>

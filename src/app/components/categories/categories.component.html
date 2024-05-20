@@ -1,0 +1,15 @@
+<h5 style="color: rgb(124, 121, 121); text-align: center;">Categorias 🗺️</h5>
+<div class="container" id="categorias">
+  <div class="carrusel">
+    <button class="flecha izquierda" (click)="moverCarrusel('izquierda')">←</button>
+    <div class="tarjetas" #tarjetasContainer>
+      <div *ngFor="let tarjeta of tarjetas" class="tarjeta">
+        <img [src]="tarjeta.imagen" alt="Card image">
+        <div class="contenido">
+          <h5 style="color: #7f7e7e; text-align: center;">{{ tarjeta.titulo }}</h5>
+        </div>
+      </div>
+    </div>
+    <button class="flecha derecha" (click)="moverCarrusel('derecha')">→</button>
+  </div>
+</div>

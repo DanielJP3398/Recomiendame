@@ -1,0 +1,18 @@
+<div class="container" id="container-cards">
+  <h5 style="color: rgb(124, 121, 121);">⭐⭐Nuestros Recomendados🡻 ⭐⭐ </h5>
+  <div class="card-container">
+    <div *ngFor="let card of cards" class="card">
+      <img [src]="card.imagen" class="card-image" alt="Imagen de la Card">
+      <div class="card-content">
+        <h3 style="color: #7f7e7e;">
+          {{card.titulo}}
+        </h3>
+        <p style="color: #7f7e7e;">
+          {{card.contenido}}
+        </p>
+        ⭐⭐⭐⭐⭐
+      </div>
+      <button (click)="selectCard(card.id)" class="btn-grad">ver</button>
+    </div>
+  </div>
+</div>

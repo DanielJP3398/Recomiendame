@@ -1,0 +1,28 @@
+.navbar {
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+}
+
+img {
+  width: 100px;
+  z-index: 2;
+  margin-top: -1.5%;
+  margin-left: -2%;
+  position: fixed;
+}
+
+li{
+  margin-top: 7%;
+
+}
+a {
+  padding: 6px 9px;
+  transition: transform 0.3s;
+
+}
+
+a:hover {
+  transform: translateY(-1.5px);
+  box-shadow: 0 7px 15px 0 rgba(115, 115, 115, 0.2);
+}

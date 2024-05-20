@@ -1,0 +1,27 @@
+<div class="body">
+  <div class="container" id="container" [formGroup]="login">
+    <div class="form-container">
+      <form class="for">
+        <h1>Inicia seccion</h1>
+        <img src="./assets/login.png" alt="" />
+      </form>
+    </div>
+    <div class="login-container">
+      <div class="login">
+        <div class="login-panel">
+          <h2>Bienvenido!</h2>
+          <br />
+          <div>
+            <form class="frm">
+              <label for="">Usuario:</label>
+              <input [class.is-invalid]="login.get('username')?.touched && login.get('username')?.invalid" type="text" class="form-control" formControlName="username" placeholder="ingrese su usuario" />
+              <label for="">Contraseña:</label>
+              <input [class.is-invalid]="login.get('userPass')?.touched && login.get('userPass')?.invalid" type="password" class="form-control" formControlName="userPass" placeholder="ingrese su contraseña" />
+            </form>
+          </div>
+          <button id="signUp"><b>Ingresar</b> </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

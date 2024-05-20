@@ -1,0 +1,10 @@
+.home{
+  width: 85%;
+  height: 100vh;
+  float: right;
+  overflow-x: hidden;
+  background-color: #111;
+}
+.dark-mode {
+  background-color: #fff;
+}

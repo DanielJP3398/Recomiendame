@@ -1,0 +1,32 @@
+<div class="body">
+  <div class="container" id="container">
+    <div class="form-container">
+      <form class="for">
+        <h1>Registro</h1>
+        <img src="./assets/register1.png" alt="" />
+      </form>
+    </div>
+    <div class="login-container">
+      <div class="login">
+        <div class="login-panel">
+          <h2>Crear cuenta</h2>
+          <br />
+          <div>
+            <form class="frm">
+              <label for="">Correo Electrónico:</label>
+              <input  type="email" class="form-control" formControlName="email" placeholder="Ingrese su correo electrónico" />
+              <div *ngIf="register.get('email')?.errors?.required && register.get('email')?.touched" class="invalid-message">El correo electrónico es requerido.</div>
+              <label for="">Nombre de Usuario:</label>
+              <input  type="text" class="form-control" formControlName="username" placeholder="Ingrese su nombre de usuario" />
+              <div *ngIf="register.get('username')?.errors?.required && register.get('username')?.touched" class="invalid-message">El nombre de usuario es requerido.</div>
+              <label for="">Contraseña:</label>
+              <input  class="form-control" formControlName="password" placeholder="Ingrese su contraseña" />
+              <div *ngIf="register.get('password')?.errors?.required && register.get('password')?.touched" class="invalid-message">La contraseña es requerida.</div>
+            </form>
+          </div>
+          <button id="signUp"><b>Registrarse</b> </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

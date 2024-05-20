@@ -1,0 +1,59 @@
+.container {
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1%;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  border-radius: 10px;
+  margin: 15px;
+  width: 29%;
+  box-shadow: 0 6px 10px 0 rgba(150, 149, 149, 0.2);
+  transition: transform 0.3s;
+  background-color: rgb(246, 244, 244);
+}
+
+.card:hover {
+  transform: translateY(-4.5px);
+  box-shadow: 0 9px 18px 0 rgba(247, 247, 247, 0.2);
+}
+
+.card-image {
+  width: 100%;
+  height: 240px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 9px;
+}
+
+.btn-grad {
+  width: 30%;
+  background-color: #0c8ee2;
+  margin: 15px 0;
+  margin-left: 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: 1s;
+}
+
+.btn-grad:hover {
+  background-color: #09588d;
+  cursor: pointer;
+}

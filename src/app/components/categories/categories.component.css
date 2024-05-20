@@ -1,0 +1,65 @@
+.container {
+  width: 93%;
+  margin: 0 auto;
+  margin-top: 3%;
+}
+h5{
+  margin-top: 2%;
+}
+.carrusel {
+  position: relative;
+
+}
+
+.tarjetas {
+  display: flex;
+  overflow-x: hidden;
+  border-radius: 10%;
+
+}
+
+.tarjeta {
+  flex: 0 0 auto;
+  width: 200px;
+  margin-right: 15px;
+  scroll-snap-align: start;
+  border-radius: 50%;
+}
+.tarjeta:hover{
+  cursor: pointer;
+  box-shadow: 0 9px 18px 0 rgba(67, 67, 67, 0.2);
+}
+
+.tarjeta img {
+  border-radius: 65%;
+  width: 85%;
+  height: 140px;
+  /* Ajusta la altura según tus tarjetas */
+  object-fit: cover;
+}
+
+.flecha {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 24px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+.flecha:hover{
+  font-size: 28px;
+  width: 50px;
+  height: 50px;
+}
+.flecha.izquierda {
+  left: 10px;
+}
+
+.flecha.derecha {
+  right: 10px;
+}

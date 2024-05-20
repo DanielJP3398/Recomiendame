@@ -1,0 +1,46 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  padding: 48px 20px;
+  box-shadow: 0 0 10px rgba(128, 127, 127, 0.1);
+  background-color: #000;
+  width: 15%;
+}
+
+.sidebar a {
+  font-size: 21px;
+  color: #909090;
+  transition: color 0.3s;
+  display: block;
+}
+
+.sidebar a:hover {
+  color: rgba(12, 142, 226, 1);
+}
+.sidebar a.active {
+  color: rgba(12, 142, 226, 1);
+}
+
+.social-icons {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+.social-icons a {
+  align-items: center;
+  margin: 9px;
+  margin-bottom: -12%;
+}
+
+.social-icons i {
+  width: 30px;
+}
